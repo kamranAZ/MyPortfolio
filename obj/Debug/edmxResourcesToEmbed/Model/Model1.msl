@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище Portfolio_CVModelContainer" CdmEntityContainer="Portfolio_Db">
+    <EntitySetMapping Name="AboutLefts">
+      <EntityTypeMapping TypeName="Portfolio_CVModel.AboutLeft">
+        <MappingFragment StoreEntitySet="AboutLeft">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MyPhoto" ColumnName="MyPhoto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AboutRights">
+      <EntityTypeMapping TypeName="Portfolio_CVModel.AboutRight">
+        <MappingFragment StoreEntitySet="AboutRight">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="Descript" ColumnName="Descript" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactInfoes">
+      <EntityTypeMapping TypeName="Portfolio_CVModel.ContactInfo">
+        <MappingFragment StoreEntitySet="ContactInfo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Addres" ColumnName="Addres" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Headers">
+      <EntityTypeMapping TypeName="Portfolio_CVModel.Header">
+        <MappingFragment StoreEntitySet="Header">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AboutMe" ColumnName="AboutMe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Journals">
+      <EntityTypeMapping TypeName="Portfolio_CVModel.Journal">
+        <MappingFragment StoreEntitySet="Journal">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PhotoJournal" ColumnName="PhotoJournal" />
+          <ScalarProperty Name="HeaderJournal" ColumnName="HeaderJournal" />
+          <ScalarProperty Name="DescripJournal" ColumnName="DescripJournal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PortfolioDowns">
+      <EntityTypeMapping TypeName="Portfolio_CVModel.PortfolioDown">
+        <MappingFragment StoreEntitySet="PortfolioDown">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PhotoPort" ColumnName="PhotoPort" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PortfolioUps">
+      <EntityTypeMapping TypeName="Portfolio_CVModel.PortfolioUp">
+        <MappingFragment StoreEntitySet="PortfolioUp">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NamePort" ColumnName="NamePort" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Services">
+      <EntityTypeMapping TypeName="Portfolio_CVModel.Service">
+        <MappingFragment StoreEntitySet="Services">
+          <ScalarProperty Name="Icons" ColumnName="Icons" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="descript" ColumnName="descript" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sosials">
+      <EntityTypeMapping TypeName="Portfolio_CVModel.Sosial">
+        <MappingFragment StoreEntitySet="Sosial">
+          <ScalarProperty Name="Icons" ColumnName="Icons" />
+          <ScalarProperty Name="Links" ColumnName="Links" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

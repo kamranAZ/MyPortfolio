@@ -1,0 +1,139 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@using Portfolio_CV.Model
+@using Portfolio_CV.langresors
+
+
+<!-- start section about us -->
+<div id="about" class="paddsection">
+    <div class="container">
+        <div class="row justify-content-between">
+            @foreach (AboutLeft at  in ViewBag.aboutImg)
+            {
+            <div class="col-lg-4 ">
+                <div class="div-img-bg">
+                    <div class="about-img">
+                        <img src="@at.MyPhoto" class="img-responsive" alt="me">
+                    </div>
+                </div>
+            </div>
+            }
+            
+            @foreach(AboutRight ar in ViewBag.aboutRight)
+            {
+        <div class="col-lg-7">
+            <div class="about-descr">
+
+                <p class="p-heading">@ar.Header</p>
+                <p class="separator">@ar.Descript</p>
+
+            </div>
+        </div>
+            }
+            
+        </div>
+    </div>
+</div>
+<!-- end section about us -->
+<!-- start section services -->
+<div id="services">
+    <div class="container">
+
+        <div class="services-carousel owl-theme">
+            @foreach (Service sr in ViewBag.servicesss)
+            {
+                <div class="services-block">
+                    <i class="ion-ios-browsers-outline"></i>
+                    <span>@sr.Header</span>
+                    <p class="separator">@sr.descript</p>
+                </div>
+            }
+
+
+        </div>
+
+    </div>
+
+</div>
+<!-- end section services -->
+<!-- start section portfolio -->
+<div id="portfolio" class="text-center paddsection">
+
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>@rhome.LMyPortf</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+
+                <div class="portfolio-list">
+
+                    <ul class="nav list-unstyled" id="portfolio-flters">
+                        @foreach (PortfolioUp pf in ViewBag.portUp)
+                        {
+                            <li class="filter filter-active" data-filter=".all">@pf.NamePort</li>
+                        }
+                    </ul>
+
+                </div>
+
+                <div class="portfolio-container">
+                    @foreach (PortfolioDown pd in ViewBag.portDown)
+                    {
+                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
+                            <a class="popup-img" href="@pd.PhotoPort">
+                                <img src="@pd.PhotoPort" alt="img">
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- End section portfolio -->
+<!-- start section journal -->
+<div id="journal" class="text-left paddsection">
+
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>@rhome.LJournal</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="journal-block">
+            <div class="row">
+                @foreach (Journal jr in ViewBag.JourJr)
+                {
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="journal-info">
+
+                            <img src="@jr.PhotoJournal" class="img-responsive" alt="img">
+
+                            <div class="journal-txt">
+
+                                <h4><a href="blog-single.html"></a>@jr.HeaderJournal</h4>
+                                <p class="separator">
+                                    @jr.DescripJournal
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- End section journal -->

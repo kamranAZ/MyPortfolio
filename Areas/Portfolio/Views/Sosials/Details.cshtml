@@ -1,0 +1,35 @@
+﻿@model Portfolio_CV.Model.Sosial
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Portfolio/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Sosial</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Links)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Links)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Icons)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Icons)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
